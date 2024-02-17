@@ -47,11 +47,11 @@ if status is-interactive
         set last_status $status
         set_color --bold magenta 
         if test $last_status -ne 0
-            echo [$last_status]
+            echo [$last_status]" "
         end
 
         set_color --bold blue 
-        echo (fish_git_prompt)
+        echo (fish_git_prompt) ""
 
         set_color normal
     end
