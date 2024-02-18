@@ -56,5 +56,17 @@ if status is-interactive
         set_color normal
     end
 
+    # Cahnge wallpapers
+    function wn
+        sh ~/Wallpapers/imageSetter.sh
+    end
+
+    function wnTimer 
+        while true
+            sleep $argv
+            wn
+        end
+    end
+
     alias ls="lsd"
 end
